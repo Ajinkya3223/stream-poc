@@ -16,6 +16,10 @@ public class PocOfSet {
         while(itr.hasNext()){
             System.out.println(itr.next());
         }
+
+
+
+
     }
 
 }
