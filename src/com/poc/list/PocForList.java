@@ -32,7 +32,7 @@ public class PocForList {
       /** using for to itrate over loop **/
 
       for(Integer i: list2){
-          System.out.println("using loop");
+          System.out.println("using for loop");
           System.out.println( i+"");
 
       }
