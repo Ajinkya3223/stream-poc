@@ -14,6 +14,7 @@ public class PocForList {
         list1.add("Ram");
         list1.add("Krishna");
         list1.add("hari");
+        list1.add("Raja");
 
         list1.add(0, "Ganesh");
 
@@ -48,20 +49,27 @@ List<Student> s1=new ArrayList<>();
       s1.add(new Student(1,"Ram",28));
       s1.add(new Student(2,"Krishna",30));
 
+      /** iterating over Generic arrayList using for loop **/
+      for(Student s: s1){
+          System.out.println(s.getRollno());
+          System.out.println(s.getAge());
+          System.out.println(s.getName());
+      }
+
 
     ArrayList<String> al2=new ArrayList<String>();  
            al2.add("jay");
            al2.add("Hanuman");
-           //Adding second list elements to the first list  
+           /** Adding second list elements to the first list   **/
            list1.addAll(al2);
     list1.forEach(t->{System.out.println(t);});
 
-        //Removing specific element from arraylist
+        /** Removing specific element from arraylist **/
         list2.remove(1);
-        //Removing elements on the basis of specified condition
-        list1.removeIf(str -> str.contains("Ajay"));   //Here, we are using Lambda expression
-        System.out.println("After invoking removeIf() method: "+al);
-        //Removing all the elements available in the list
+        /** Removing elements on the basis of specified condition **/
+        list1.removeIf(str -> str.contains("Raja"));   //Here, we are using Lambda expression
+        System.out.println("After invoking removeIf() method: "+list1);
+        /** Removing all the elements available in the list **/
         list2.clear();
     }
 
