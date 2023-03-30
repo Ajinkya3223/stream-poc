@@ -1,6 +1,7 @@
 package com.poc.list;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -15,6 +16,9 @@ public class PocForList {
         list1.add("Krishna");
         list1.add("hari");
         list1.add("Raja");
+        
+        /** Sorting ArrayList in ascending Order    **/
+          Collections.sort(list1);
 
         list1.add(0, "Ganesh");
 
@@ -30,6 +34,10 @@ public class PocForList {
         list2.add(1);
         list2.add(2);
         list2.add(3);
+        
+        /** Sorting ArrayList in ascending Order   **/
+       // using Collection.sort() method
+        Collections.sort(list2, Collections.reverseOrder());
 
         Iterator itr2=list2.iterator();
         while(itr2.hasNext()){
