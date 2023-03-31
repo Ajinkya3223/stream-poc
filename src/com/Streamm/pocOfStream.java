@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 public class pocOfStream {
     public static void main(String[] args) {
 
-
+        /** Stream api stream **/
     Transaction a = new Transaction(1000L, Type.DEBIT, 1);
     Transaction b = new Transaction(10000L, Type.CREDIT, 2);
     Transaction c = new Transaction(50000L, Type.DEBIT, 3);
@@ -48,5 +48,6 @@ public class pocOfStream {
     Stream<String> streamOfString =
             Pattern.compile(", ").splitAsStream("MON, TUE, WED");
         streamOfString.forEach(t -> System.out.println(t));
+
 }
 }
